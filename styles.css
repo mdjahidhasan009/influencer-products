@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    padding: 15px 30px;
+    color: white;
+    background-color: #4000ff;
+    outline: auto;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.center-text {
+    width: 100%;
+    text-align: center;
+}
+
+p {
+    color: rgba(58, 58, 58, 1);
+}
+
+img {
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+header {
+    margin-bottom: 20px;
+}
+
+.intro:hover {
+    /* scale: 2; */
+    transform: scale(1.1);
+    /* color: #4000ff;; */
+    /* translate: 0 50px; */
+    transition: all .2s ease-in-out;
+}
+
+.info button {
+    transition: all .2s ease-in-out;
+}
+
+.lg-screen-navigaion {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.site-name {
+    font-size: 24px;
+    
+}
+
+.lg-screen-navigaion .site-name p {
+    margin-top: 7px;
+}
+
+.nav-list ul {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-list li {
+    font-size: 16px;
+    margin: 0 25px;
+}
+
+.md-secreen-navigation {
+    display: none;
+}
+
+@media only screen and (max-width: 976px) {
+    .lg-screen-navigaion {
+        display: none;
+    }
+
+    .md-secreen-navigation {
+        display: contents;
+    }
+
+    .md-secreen-navigation .bars, 
+    .md-secreen-navigation .site-name ,
+    .md-secreen-navigation .icons {
+        margin: auto 0;
+        /* font-size: 2rem; */
+    }
+
+    .md-secreen-navigation .bars, 
+    .md-secreen-navigation .icons {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .md-secreen-navigation p {
+        font-size: 1.2rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+.intro p {
+    font-weight: 600;
+}
+
+.intro h1:first-child {
+    margin-bottom: 0;
+}
+
+.intro h1:nth-child(2) {
+    margin-top: 0;
+}
+
+.left-side {
+    margin: auto 0;
+    width: 45%;
+}
+
+.right-side {
+    width: 40%;
+}
+
+.intro .btn .fas{
+    margin-left: 7px;
+}
+
+.right-side img{
+    background: url("images/Circle-design.svg");
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+@media only screen and (max-width: 976px) {
+    .intro {
+        flex-direction: column;
+    }
+    
+    .left-side {
+        margin: 0 auto;
+        width: 80%;
+        margin-bottom: 50px;
+    }
+
+    .right-side {
+        margin: 0 auto;
+        width: 50%;
+    }
+}
+
+
+
+
+
+.popular-section p {
+    margin: 50px;
+}
+
+.card-section {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+@media only screen and (max-width: 576px) {
+    .card-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) { 
+    .card-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.card {
+    color: #FFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.card-container {
+    padding: 15px;
+}
+
+.card__details, .card__thumbnail {
+    display: inline;
+}
+
+.card__details h3{
+    font-weight: 500;
+    color: rgba(24, 25, 31, 1);
+}
+
+.card__details h3, .card__details p {
+    margin: 0;
+    font-weight: 500;
+}
+
+.card__details .price {
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.card__details .fas {
+    color: goldenrod;
+}
+
+.see-more-btn p {
+    color: #4000ff;
+    text-align: right;
+    font-weight: 400;
+    margin: 25px 10px 25px 0;
+}
+
+.see-more-btn a {
+    text-decoration: none;
+}
+
+
+
+
+.contact {
+    margin: 0 auto;
+    width: 90%;
+    margin-bottom: 25px;
+}
+
+.input-form input,
+.input-form textarea {
+    border: 0;
+    width: 100%;
+    height: 45px;
+    font-size: 14px;
+    line-height: 1.428571;
+    color: white !important;
+    background: #9f8cd8;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+.input-form textarea {
+  max-width: 100%;
+  min-height: 120px;
+  color: white !important;
+  padding-top: 10px;
+}
+
+
+
+
+
+footer {
+    background: #132669;
+    color: white;
+}
+
+.footer-contianer h4 {
+    margin: 0;
+    padding: 30px 0 0 0;
+}
+
+.footer-contianer p{
+    font-size: 14px;
+    font-weight: 400;
+    margin: 5px 0;
+    color: white;
+}
+
+.footer-contianer .social-icons .fab {
+    margin: 5px;
+}
