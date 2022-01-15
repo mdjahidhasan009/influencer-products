@@ -1,8 +1,15 @@
+/*
+    Importing Font
+ */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+/**********************************************************************************************************************************
+                                                         Common Styles 
+ *********************************************************************************************************************************/
 :root {
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
+    --btn-color: #4000ff;
 }
 
 body {
@@ -19,7 +26,7 @@ body {
 .btn {
     padding: 15px 30px;
     color: white;
-    background-color: #4000ff;
+    background-color: var(--btn-color);
     outline: auto;
     font-weight: bold;
     font-size: 15px;
@@ -38,10 +45,15 @@ img {
     width: 100%;
 }
 
+main {
+    width: 100%;
+}
 
 
 
-
+/**********************************************************************************************************************************
+                                                         Header And Intro(hero part)
+ *********************************************************************************************************************************/
 
 
 
@@ -50,14 +62,7 @@ header {
 }
 
 .intro:hover {
-    /* scale: 2; */
     transform: scale(1.1);
-    /* color: #4000ff;; */
-    /* translate: 0 50px; */
-    transition: all .2s ease-in-out;
-}
-
-.info button {
     transition: all .2s ease-in-out;
 }
 
@@ -90,42 +95,6 @@ header {
     display: none;
 }
 
-@media only screen and (max-width: 976px) {
-    .lg-screen-navigaion {
-        display: none;
-    }
-
-    .md-secreen-navigation {
-        display: contents;
-    }
-
-    .md-secreen-navigation .bars, 
-    .md-secreen-navigation .site-name ,
-    .md-secreen-navigation .icons {
-        margin: auto 0;
-        /* font-size: 2rem; */
-    }
-
-    .md-secreen-navigation .bars, 
-    .md-secreen-navigation .icons {
-        font-size: 2rem;
-    }
-}
-
-@media only screen and (max-width: 450px) {
-    .md-secreen-navigation p {
-        font-size: 1.2rem;
-    }
-}
-
-
-
-
-
-
-
-
-
 .intro p {
     font-weight: 600;
 }
@@ -153,7 +122,6 @@ header {
 
 .right-side img{
     background: url("images/Circle-design.svg");
-    /* width: 100%; */
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -176,11 +144,13 @@ header {
 }
 
 
-
+/**********************************************************************************************************************************
+                                                         Popular Section
+ *********************************************************************************************************************************/
 
 
 .popular-section p {
-    margin: 50px;
+    margin: 50px auto;
 }
 
 .card-section {
@@ -189,18 +159,6 @@ header {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 15px;
-}
-
-@media only screen and (max-width: 576px) {
-    .card-section {
-        grid-template-columns: repeat(1, 1fr);
-    }
-}
-
-@media only screen and (min-width: 577px) and (max-width: 992px) { 
-    .card-section {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 .card {
@@ -215,6 +173,10 @@ header {
 
 .card__details, .card__thumbnail {
     display: inline;
+}
+
+.card__thumbnail img {
+    border-radius: 15px;
 }
 
 .card__details h3{
@@ -236,11 +198,23 @@ header {
     color: goldenrod;
 }
 
+@media only screen and (max-width: 576px) {
+    .card-section {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 992px) { 
+    .card-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 .see-more-btn p {
-    color: #4000ff;
+    color: var(--btn-color);
     text-align: right;
     font-weight: 400;
-    margin: 25px 10px 25px 0;
+    padding-right: 15px;
 }
 
 .see-more-btn a {
@@ -248,7 +222,9 @@ header {
 }
 
 
-
+/**********************************************************************************************************************************
+                                                        Contact Us
+ *********************************************************************************************************************************/
 
 .contact {
     margin: 0 auto;
@@ -277,7 +253,9 @@ header {
 }
 
 
-
+/**********************************************************************************************************************************
+                                                         Footer
+ *********************************************************************************************************************************/
 
 
 footer {
